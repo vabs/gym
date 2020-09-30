@@ -18,16 +18,16 @@ class App extends Component {
     return (
       <Router>
       <div>
-        <ul>
+        {/* <ul>
             <li>
               <Link to="/gym">Home</Link>
             </li>
             {/* <li>
               <Link to="/chart">Chart</Link>
-            </li> */}
-          </ul>
+            </li>
+          </ul> 
 
-        <hr />
+        <hr /> */}
 
         <Switch>
           <Route exact path="/gym">

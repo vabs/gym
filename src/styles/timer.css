@@ -1,3 +1,7 @@
+body {
+  background: #f2f2f2;
+}
+
 .slot {
   width: 150px;
   height: 150px;
@@ -41,10 +45,12 @@
 
 .default {
   border-radius: 100px;
+  font-weight: bolder;
 }
 
 .active {
   animation: heartbeat 1s infinite;
+  border-radius: 50%;
 }
 
 .clock {
