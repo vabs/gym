@@ -1,0 +1,77 @@
+.slot {
+  width: 150px;
+  height: 150px;
+  margin: 5px;
+  border: 2px solid gray;
+
+  text-align: center;
+  display: table-cell;
+  overflow: hidden;
+  vertical-align:middle;
+  cursor: pointer;
+}
+
+@keyframes heartbeat
+{
+  0%
+  {
+    transform: scale( .75 );
+  }
+  20%
+  {
+    transform: scale( 1 );
+  }
+  40%
+  {
+    transform: scale( .75 );
+  }
+  60%
+  {
+    transform: scale( 1 );
+  }
+  80%
+  {
+    transform: scale( .75 );
+  }
+  100%
+  {
+    transform: scale( .75 );
+  }
+}
+
+.default {
+  border-radius: 100px;
+}
+
+.active {
+  animation: heartbeat 1s infinite;
+}
+
+.clock {
+  color: #000;
+  font-size: 150px;
+}
+
+.clock-data {
+  font-size: 15px;
+}
+
+.color1 {
+  background-color: #26251C;
+}
+
+.color2 {
+  background-color: #6DA67A
+}
+
+.color3 {
+  background-color: #4B1139;
+}
+
+.color4 {
+  background-color: #057C46;
+}
+
+.color5 {
+  background-color: #F8BE00;
+}

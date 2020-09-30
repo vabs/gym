@@ -1,26 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+// import Chart from './Chart';
+// import Dashboard from './Dashboard';
+import Timer from './Timer';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
+
+class App extends Component {
+
+  render() {
+    return (
+      <Router>
+      <div>
+        <ul>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            {/* <li>
+              <Link to="/chart">Chart</Link>
+            </li> */}
+          </ul>
+
+        <hr />
+
+        <Switch>
+          <Route exact path="/">
+            <Timer />
+          </Route>
+          {/* <Route path="/dashboard">
+            <Dashboard />
+          </Route> */}
+          {/* <Route path="/chart">
+            <Chart />
+          </Route> */}
+        </Switch>
+      </div>
+    </Router>
+    );
+  }
 }
 
 export default App;

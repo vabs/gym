@@ -1,0 +1,16 @@
+{
+  "workouts": [
+    {
+      "title":"Warmup",
+      "color": "red"
+    },
+    {
+      "title":"Surya Namaskar",
+      "color": "red"
+    },
+    {
+      "title":"Floor Exercise",
+      "color": "red"
+    }
+  ]
+}
