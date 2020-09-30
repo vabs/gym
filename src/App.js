@@ -20,7 +20,7 @@ class App extends Component {
       <div>
         <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/gym">Home</Link>
             </li>
             {/* <li>
               <Link to="/chart">Chart</Link>
@@ -30,7 +30,7 @@ class App extends Component {
         <hr />
 
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/gym">
             <Timer />
           </Route>
           {/* <Route path="/dashboard">
